@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Data Pengajuan Surat</title>
+    <title>Status Pengajuan Surat SDN Pinang Ranti 05 Pagi</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -13,17 +13,19 @@
             padding: 20px;
         }
         .container {
-            max-width: 800px;
+            max-width: 900px;
             margin: auto;
             background: #fff;
-            padding: 20px;
+            padding: 20px 30px;
             border-radius: 8px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
         }
         h1 {
             text-align: center;
             color: #007BFF;
-            margin-bottom: 20px;
+            margin-bottom: 25px;
+            border-bottom: 2px solid #007BFF;
+            padding-bottom: 10px;
         }
         table {
             width: 100%;
@@ -31,7 +33,7 @@
             margin-top: 20px;
         }
         th, td {
-            padding: 12px;
+            padding: 15px;
             text-align: left;
             border-bottom: 1px solid #ddd;
         }
@@ -41,20 +43,29 @@
             text-transform: uppercase;
         }
         tr:nth-child(even) {
-            background-color: #f2f2f2;
+            background-color: #f9f9f9;
+        }
+        tr:hover {
+            background-color: #f1f1f1;
         }
         .status-pengajuan {
             font-weight: bold;
         }
         .status-pengajuan.pengajuan {
-            color: #FFC107; /* Kuning */
+            color: #DC3545; /* Merah */
+        }
+        .status-pengajuan.diproses {
+            color: #007BFF; /* Biru */
+        }
+        .status-pengajuan.selesai {
+            color: #28A745; /* Hijau */
         }
     </style>
 </head>
 <body>
 
 <div class="container">
-    <h1>Data Pengajuan Surat Peserta Didik</h1>
+    <h1>Status Pengajuan Surat SDN Pinang Ranti 05 Pagi</h1>
     <table>
         <thead>
             <tr>
@@ -70,6 +81,18 @@
                 <td>3C</td>
                 <td>Surat Keterangan Prestasi</td>
                 <td class="status-pengajuan pengajuan">Pengajuan</td>
+            </tr>
+            <tr>
+                <td>NADIA AZZAHRA</td>
+                <td>4A</td>
+                <td>Surat Keterangan Lulus</td>
+                <td class="status-pengajuan diproses">Sedang Diproses</td>
+            </tr>
+            <tr>
+                <td>ADI NUGROHO</td>
+                <td>5B</td>
+                <td>Surat Keterangan Belum Memiliki Akta</td>
+                <td class="status-pengajuan selesai">Sudah Selesai, Mohon Segera Diambil</td>
             </tr>
         </tbody>
     </table>
