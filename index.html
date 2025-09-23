@@ -1,1 +1,79 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Pengajuan Surat</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+        }
+        .container {
+            max-width: 800px;
+            margin: auto;
+            background: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            text-align: center;
+            color: #007BFF;
+            margin-bottom: 20px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        th, td {
+            padding: 12px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+        th {
+            background-color: #007BFF;
+            color: white;
+            text-transform: uppercase;
+        }
+        tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+        .status-pengajuan {
+            font-weight: bold;
+        }
+        .status-pengajuan.pengajuan {
+            color: #FFC107; /* Kuning */
+        }
+    </style>
+</head>
+<body>
 
+<div class="container">
+    <h1>Data Pengajuan Surat Peserta Didik</h1>
+    <table>
+        <thead>
+            <tr>
+                <th>Nama Lengkap</th>
+                <th>Kelas</th>
+                <th>Jenis Surat yang Diajukan</th>
+                <th>Status Pengajuan</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>FAISAL HELMI WICAKSONO</td>
+                <td>3C</td>
+                <td>Surat Keterangan Prestasi</td>
+                <td class="status-pengajuan pengajuan">Pengajuan</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+</body>
+</html>
